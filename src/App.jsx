@@ -1,7 +1,12 @@
 import React from "react";
+import Message from "./assets/Message";
 
 const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Message />
+    </div>
+  );
 };
 
 export default App;
