@@ -1,11 +1,12 @@
 import React from "react";
 
 const ListGroup = () => {
-  const items = ["Nepal", "USA", "India", "China", "Russia"];
+  let items = ["Nepal", "USA", "India", "China", "Russia"];
   return (
     <>
+      {items.length === 0 && <p>Items not found</p>}
       {items.map((items) => (
-        <li>{items}</li>
+        <li key={items}>{items}</li>
       ))}
     </>
   );
