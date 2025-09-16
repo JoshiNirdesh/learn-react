@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
 const ListGroup = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
-  const handleClick = (event) => {
-    console.log("Clicked");
-  };
+  const [selectedItem, setSelectedItem] = useState("");
+
   return (
     <>
       {items.length === 0 && <p>Items not found</p>}
       <ul className="list-group">
         {items.map((items, index) => (
-          <li className="list-group-item" key={items} onClick={handleClick}>
+          <li
+            className={
+              selectedItem === index
+                ? "list-group-item active"
+                : "list-group-item"
+            }
+            key={items}
+            onClick={() => {
+              setSelectedItem(index);
+            }}
+          >
             {items}
           </li>
         ))}
