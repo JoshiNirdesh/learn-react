@@ -2,6 +2,7 @@ import React from "react";
 import Message from "./assets/Message";
 import ListGroup from "./assets/components/ListGroup";
 import Alert from "./assets/components/Alert";
+import Button from "./assets/components/Button";
 
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
@@ -9,6 +10,9 @@ const App = () => {
     console.log(item);
   };
 
+  const handleClick = () => {
+    console.log("Handle Clicked");
+  };
   return (
     <div>
       <Message />
@@ -17,6 +21,9 @@ const App = () => {
         <h1>Hello world</h1>
         <p>This is an Alert</p>
       </Alert>
+      <Button color="danger" onClick={handleClick}>
+        My Button
+      </Button>
     </div>
   );
 };
