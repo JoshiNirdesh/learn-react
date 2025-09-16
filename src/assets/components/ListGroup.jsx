@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-const ListGroup = () => {
-  let items = ["Nepal", "USA", "India", "China", "Russia"];
+const ListGroup = ({ items, heading }) => {
   const [selectedItem, setSelectedItem] = useState("");
 
   return (
     <>
+      <h3>{heading}</h3>
       {items.length === 0 && <p>Items not found</p>}
       <ul className="list-group">
         {items.map((items, index) => (
