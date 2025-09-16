@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-const ListGroup = ({ items, heading }) => {
+const ListGroup = ({ items, heading, onSelect }) => {
   const [selectedItem, setSelectedItem] = useState("");
 
   return (
@@ -19,6 +19,7 @@ const ListGroup = ({ items, heading }) => {
             key={items}
             onClick={() => {
               setSelectedItem(index);
+              onSelect(items);
             }}
           >
             {items}
