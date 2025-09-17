@@ -11,6 +11,12 @@ const Alert = ({ children }) => {
           data-dismiss="alert"
           aria-label="Close"
         ></button>
+        <button
+          type="button"
+          className="btn-close"
+          data-dismiss="alert"
+          aria-label="Close"
+        ></button>
       </div>
     </>
   );

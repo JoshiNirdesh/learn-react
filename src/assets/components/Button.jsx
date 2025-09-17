@@ -13,6 +13,13 @@ const Button = ({ children, color, onClick }) => {
       >
         {children}
       </button>
+      <button
+        type="button"
+        className={"btn btn-" + color}
+        onClick={() => setAlertVisible(true)}
+      >
+        {children}
+      </button>
     </div>
   );
 };
