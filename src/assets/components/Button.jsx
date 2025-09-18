@@ -20,6 +20,7 @@ const Button = ({ children, color, onClick }) => {
       >
         {children}
       </button>
+      <li>THis is buttom</li>
     </div>
   );
 };
