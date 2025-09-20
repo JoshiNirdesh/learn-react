@@ -3,6 +3,7 @@ import Message from "./assets/Message";
 import ListGroup from "./assets/components/ListGroup";
 import Alert from "./assets/components/Alert";
 import Button from "./assets/components/Button";
+import UseState from "./assets/components/State1";
 
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
@@ -24,6 +25,7 @@ const App = () => {
       <Button color="danger" onClick={handleClick}>
         My Button
       </Button>
+      <UseState />
     </div>
   );
 };
