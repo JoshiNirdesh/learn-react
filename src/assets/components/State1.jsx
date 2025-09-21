@@ -1,15 +1,24 @@
 import React, { useState } from "react";
 
 const State1 = () => {
-  const [count, setCount] = useState(0);
+  const someValue = () => {
+    console.log("Calculation");
+    return 10;
+  };
+  const [state, setState] = useState({
+    count: someValue(),
+    firstName: "Hari",
+    lastName: "Shrestha",
+  });
 
   const increment = () => {
-    setCount(count + 1);
-    console.log(count);
+    setState({ ...state, count: state.count + 1 });
+    console.log(state.count);
+    console.log(state.firstName);
   };
   return (
     <>
-      <h3>{count}</h3>
+      <h3>{state.count}</h3>
       <button onClick={increment}>Increment</button>
     </>
   );

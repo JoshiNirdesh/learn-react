@@ -4,6 +4,7 @@ import ListGroup from "./assets/components/ListGroup";
 import Alert from "./assets/components/Alert";
 import Button from "./assets/components/Button";
 import UseState from "./assets/components/State1";
+import Counter from "./assets/components/Counter";
 
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
@@ -26,6 +27,7 @@ const App = () => {
         My Button
       </Button>
       <UseState />
+      <Counter />
     </div>
   );
 };
