@@ -5,6 +5,8 @@ import Alert from "./assets/components/Alert";
 import Button from "./assets/components/Button";
 import UseState from "./assets/components/State1";
 import Counter from "./assets/components/Counter";
+import Toggle from "./assets/components/Toggle";
+import Input from "./assets/components/Input";
 
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
@@ -28,6 +30,8 @@ const App = () => {
       </Button>
       <UseState />
       <Counter />
+      <Toggle />
+      <Input />
     </div>
   );
 };
