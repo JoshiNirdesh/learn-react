@@ -7,6 +7,7 @@ import UseState from "./assets/components/State1";
 import Counter from "./assets/components/Counter";
 import Toggle from "./assets/components/Toggle";
 import Input from "./assets/components/Input";
+import Password from "./assets/components/Password";
 
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
@@ -19,7 +20,6 @@ const App = () => {
   };
   return (
     <div>
-      <Message />
       <ListGroup items={items} heading="Cities" onSelect={handleSelect} />
       <Alert>
         <h1>Hello world</h1>
@@ -32,6 +32,7 @@ const App = () => {
       <Counter />
       <Toggle />
       <Input />
+      <Password />
     </div>
   );
 };
