@@ -8,6 +8,7 @@ import Counter from "./assets/components/Counter";
 import Toggle from "./assets/components/Toggle";
 import Input from "./assets/components/Input";
 import Password from "./assets/components/Password";
+import FormHandling from "./assets/components/FormHandling";
 
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
@@ -33,6 +34,7 @@ const App = () => {
       <Toggle />
       <Input />
       <Password />
+      <FormHandling />
     </div>
   );
 };
