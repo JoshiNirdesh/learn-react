@@ -10,6 +10,7 @@ import Input from "./assets/components/Input";
 import Password from "./assets/components/Password";
 import FormHandling from "./assets/components/FormHandling";
 import ToDo from "./assets/components/ToDo";
+import LikeCount from "./assets/components/LikeCount";
 
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
@@ -37,6 +38,7 @@ const App = () => {
       <Password />
       <FormHandling />
       <ToDo />
+      <LikeCount />
     </div>
   );
 };
