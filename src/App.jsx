@@ -13,6 +13,7 @@ import ToDo from "./assets/components/ToDo";
 import LikeCount from "./assets/components/LikeCount";
 import ShoppingCart from "./assets/components/ShoppingCart";
 import ModeDark from "./assets/components/ModeDark";
+import Quiz from "./assets/components/Quiz";
 
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
@@ -43,6 +44,7 @@ const App = () => {
       <LikeCount />
       <ShoppingCart />
       <ModeDark />
+      <Quiz />
     </div>
   );
 };
