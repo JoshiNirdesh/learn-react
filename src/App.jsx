@@ -12,6 +12,7 @@ import FormHandling from "./assets/components/FormHandling";
 import ToDo from "./assets/components/ToDo";
 import LikeCount from "./assets/components/LikeCount";
 import ShoppingCart from "./assets/components/ShoppingCart";
+import ModeDark from "./assets/components/ModeDark";
 
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
@@ -41,6 +42,7 @@ const App = () => {
       <ToDo />
       <LikeCount />
       <ShoppingCart />
+      <ModeDark />
     </div>
   );
 };
