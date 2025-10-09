@@ -14,7 +14,9 @@ import LikeCount from "./assets/components/LikeCount";
 import ShoppingCart from "./assets/components/ShoppingCart";
 import ModeDark from "./assets/components/ModeDark";
 import Quiz from "./assets/components/Quiz";
-
+import { Route, Routes } from "react-router-dom";
+import Learn from "./assets/useEffect/Basic";
+import Basic from "./assets/useEffect/Basic";
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
   const handleSelect = (item) => {
@@ -45,6 +47,7 @@ const App = () => {
       <ShoppingCart />
       <ModeDark />
       <Quiz />
+      <Basic />
     </div>
   );
 };
