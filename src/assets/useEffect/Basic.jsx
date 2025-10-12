@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Basic = () => {
-  const [resource, setResource] = useState("");
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    console.log("count changed");
+  }, [count]);
   return (
     <div>
-      <button onClick={() => setResource("users")}>Users</button>
-      <button onClick={() => setResource("post")}>Post</button>
-      <button onClick={() => setResource("comment")}>Comment</button>
-
-      <p>{resource}</p>
+      <h2>Count : {count}</h2>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>
   );
 };
