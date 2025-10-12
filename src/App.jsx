@@ -17,6 +17,8 @@ import Quiz from "./assets/components/Quiz";
 import { Route, Routes } from "react-router-dom";
 import Learn from "./assets/useEffect/Basic";
 import Basic from "./assets/useEffect/Basic";
+import CleanUp from "./assets/useEffect/CleanUp";
+import FetchApi from "./assets/useEffect/FetchApi";
 const App = () => {
   let items = ["Nepal", "USA", "India", "China", "Russia"];
   const handleSelect = (item) => {
@@ -48,6 +50,8 @@ const App = () => {
       <ModeDark />
       <Quiz />
       <Basic />
+      <CleanUp />
+      <FetchApi />
     </div>
   );
 };
